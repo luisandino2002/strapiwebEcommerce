@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_types",
+  "info": {
+    "name": "productType",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "products": {
+      "collection": "products",
+      "via": "product_type"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
